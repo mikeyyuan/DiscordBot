@@ -116,6 +116,7 @@ module.exports = {
         //janky global variables
 
         userid = target.id
+        username = target.username
         reporterid = interaction.user.id
         reporter = interaction.user.username
         reportreason = reason
