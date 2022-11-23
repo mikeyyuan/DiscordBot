@@ -139,7 +139,7 @@ module.exports = {
 			.setFooter({ text: '⚖️ React with or 👍 - 👎 was this a good report?'});
 		//console.log(interaction)
 		//await interaction.reply({ embeds: [exampleEmbed] , ephmereal: true});
-		interaction.guild.channels.cache.get('1044849310463963147').send({ embeds: [exampleEmbed] , ephmereal: true}).then(async exampleEmbed => {
+		interaction.guild.channels.cache.get('1044078712649429083').send({ embeds: [exampleEmbed] , ephmereal: true}).then(async exampleEmbed => {
             await exampleEmbed.react('👍');
             await exampleEmbed.react('👎');
         })
