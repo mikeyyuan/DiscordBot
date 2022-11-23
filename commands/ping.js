@@ -24,7 +24,8 @@ module.exports = {
 			.setImage('https://i.imgur.com/AfFp7pu.png')
 			.setTimestamp()
 			.setFooter({ text: 'Some footer text here', iconURL: 'https://i.imgur.com/AfFp7pu.png' });
-
-		channels.cache.get('1044078712649429083').send({ embeds: [exampleEmbed] });
+		console.log(interaction)
+		//await interaction.reply({ embeds: [exampleEmbed] , ephmereal: true});
+		await interaction.guild.channels.cache.get('1044078712649429083').send({ embeds: [exampleEmbed] , ephmereal: true})
 	},
 };

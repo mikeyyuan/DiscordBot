@@ -1,4 +1,4 @@
-const { SlashCommandBuilder } = require('discord.js');
+const { SlashCommandBuilder, message } = require('discord.js');
 
 module.exports = {
 	data: new SlashCommandBuilder()
@@ -24,5 +24,6 @@ module.exports = {
         .setColor("BLACK")
         .setAuthor(member.user.username);
         message.channel.send({embeds: [embed]});
+        console.log(message)
     },
 };
